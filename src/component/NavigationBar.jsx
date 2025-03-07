@@ -18,7 +18,7 @@ function NavigationBar() {
     <Navbar expand="lg" id='play' sticky="top" className="py-3">
       <Container>
         <Navbar.Brand href="#" className='CWorld' data-aos="fade-right"><b>Play <span className='NFT'>NFT</span></b></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" className='NavbarToggle'/>
         <Navbar.Collapse id="navbar-nav" className="justify-content-center">
           <Nav className="mx-auto text-center" data-aos="fade-up">
             <Nav.Link href="/home" className='home'>Home</Nav.Link>

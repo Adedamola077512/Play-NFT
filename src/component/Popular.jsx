@@ -47,8 +47,8 @@ const Popular = () => {
           modifier: 2.5,
         }}
         pagination={{ clickable: true }}
-        navigation={true} // Keep navigation enabled for larger screens
-        modules={[EffectCoverflow, Navigation, Pagination, Autoplay]} // Add Autoplay module
+        navigation={true}
+        modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
         className="swiper_container"
       >
         {nftData.map((nft, index) => (

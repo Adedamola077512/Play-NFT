@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 600px) {
     .Artworks {
-        font-size: 35px;
+        font-size: 29px;
     }
     .Explore-flex {
         flex-direction: column;
@@ -80,7 +80,7 @@
     }
     .Explore-card {
         padding-top: 30px;
-        /* width: 100%; */
+        width: 90%;
         height: auto;
         padding-bottom: 20px;
         text-align: center;
@@ -89,6 +89,14 @@
         /* margin-top: 10px; */
         align-items: center;
         justify-content: space-around;
+    }
+    .Explore-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
     .Explore-flex-item h6{
         font-size: 15px;                                                

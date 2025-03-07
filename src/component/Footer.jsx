@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='container'>
         <div className='footer-flex'>
             <div>
-                <h4 className='CWorld'>Play <span className='NFT'>NFT</span></h4>
+                <h4 className='CWorld' id='footer-play'>Play <span className='NFT'>NFT</span></h4>
                 <p className='footer-content'>The world’s largest Digital Marketplace for crypto collection and <br />non fungible tokens (NFTs) buy, sell and discover exclusive <br />digital assets</p>
             </div>
             <div>

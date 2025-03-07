@@ -138,7 +138,8 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background-color: black;
+      /* border: 2px solid #fff; */
+      /* background-color: black; */
     }
     #navbar-toggler {
       display: none;
@@ -148,7 +149,9 @@
         margin: 10px 0;
         display: none;
     }
-
+    .home:hover {
+      border: none;
+    }
     .navbar-nav{
         gap: 10px;
         margin-top: 10px;
@@ -156,5 +159,31 @@
     .input {
       width: 100%;
     }
+    .NavbarToggle {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    /* color: white; */
+    background: transparent;
+    border-radius: 10px;
+    z-index: 1;
+    border: none;
+    overflow: hidden;
+  }
+  .NavbarToggle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #A31AFF 0%, #15A5E3 100%);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+  }
 }
 

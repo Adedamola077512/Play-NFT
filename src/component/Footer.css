@@ -39,5 +39,8 @@ li a{
         margin-bottom: 10px;
         /* text-align: center; */
     }
+    #footer-play {
+        font-size: 30px;
+    }
     
 }
