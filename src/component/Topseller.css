@@ -45,4 +45,7 @@
         width: 100%;
         gap: 10px;
     }
+    .top {
+        font-size: 30px;
+    }
 }
