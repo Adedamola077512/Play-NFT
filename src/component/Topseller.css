@@ -1,0 +1,48 @@
+.Top-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.Top-seller {
+    margin-top: 100px;
+}
+.top {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 100%;
+    color: white;
+    text-align: center;
+    letter-spacing: 0%;
+    padding-bottom: 50px;
+
+}
+.Top-flex-item {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    background-color: #525a76;
+    width: 230px;
+    padding: 10px;
+    color: white;
+    height: 80px;
+    /* text-align: center; */
+    border-radius: 10px;
+}
+.Top-img {
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    /* border-radius: 50%; */
+}
+.Top-line {
+    line-height: 17px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .Top-flex {
+        width: 100%;
+        gap: 10px;
+    }
+}

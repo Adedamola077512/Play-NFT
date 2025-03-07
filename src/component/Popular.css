@@ -1,0 +1,121 @@
+/* Container */
+.popular-container {
+    max-width: 90%; /* Smaller width */
+    margin: auto;
+    text-align: center;
+    padding: 50px 50px;
+    margin-top:90px;
+    /* background: radial-gradient(circle at center, #3a0ca3, #000); */
+    border-radius: 15px;
+  }
+  
+  /* Title */
+  .title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #fff;
+  }
+  
+  /* Swiper Container */
+  .swiper_container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  /* NFT Cards */
+  .nft-card {
+    margin-top: 50px;
+    background: linear-gradient(135deg, #3a0ca3, #8142f5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px; /* Match image width */
+    text-align: center;
+    background-image: url(/src/assets/Ellipse.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nft-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* NFT Image */
+  .nft-image {
+    width: 250px; /* Match card width */
+    height: 250px; /* Adjust height proportionally */
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* NFT Info */
+  .nft-info {
+    padding-top: 12px;
+
+  }
+  
+  .nft-title {
+    font-size: 1.4rem;
+    color: white;
+  }
+  
+  .nft-author {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  /* NFT Meta */
+  .nft-meta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 10px;
+  }
+  
+  .nft-price {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+  }
+  
+  .nft-likes {
+    color: #ff77e9;
+    font-size: 0.85rem;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+@media screen and (max-width: 600px) {
+    .nft-card {
+      width: 100%; /* Make the card full width on mobile */
+    }
+    .title {
+        font-size: 30px;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .nft-image {
+      width: 100%; /* Make image fill the card */
+      height: auto; /* Keep aspect ratio */
+    }
+    .popular-container {
+        padding: 10px 20px;
+        margin-top: 60px;
+    }
+
+  }
+  

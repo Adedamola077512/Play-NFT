@@ -1,0 +1,43 @@
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 100px;
+}
+.footer-flex h5{
+    background: rgba(21, 165, 227, 1);
+    /* how to give a text grident color  */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    margin-left: -20px;
+}
+.footer-content {
+    font-family: Bree Serif;
+    font-weight: 400;
+    font-size: 15px;
+    /* margin-top: 10px; */
+    line-height: 1.5;
+    letter-spacing: 0%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-flex {
+        flex-direction: column;
+        /* align-items: center; */
+        margin-top: 50px;
+    }
+    .footer-content {
+        font-size: 12px;
+        margin-bottom: 10px;
+        /* text-align: center; */
+    }
+    
+}

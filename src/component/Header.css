@@ -1,0 +1,204 @@
+.Header-flex {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.header-h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.header-p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.header-btn-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header-btn {
+    width: 159px;
+    height: 55;
+    gap: 10px;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(90deg, #A31AFF 0%, #15A5E3 100%);
+
+}
+.header-btnn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    z-index: 1;
+    border: none;
+    overflow: hidden;
+}
+.header-btnn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #A31AFF 0%, #15A5E3 100%);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+.FaVideo {
+    font-size: 30px;
+    color: #A31AFF;
+}
+.header-art-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, #A31AFF 0%, #15A5E3 100%);
+    width: 350px;
+    height: 117;
+    padding-top: 10px;
+    border-radius: 23px;
+}
+.header-background {
+    
+    /* background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* background-size: contain; */
+}
+.header-image-container {
+    background: rgba(255, 255, 255, 0.1);
+    /* position: absolute; */
+    background-blend-mode: overlay;
+    background-image: url(/src/assets/Ellipse\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 470px;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* padding-bottom: 20px; */
+    width: 360px;
+    color: black;
+    text-align: center
+}
+.header-bid-info-flex {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #A31AFF 20%, #fff 100%, #15A5E3 20px);
+    width: 300px;
+    gap: 10px;
+    margin: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.img-fluid {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* border-radius: 23px; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btn-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.bid-btn{
+    background: linear-gradient(90deg, #A31AFF 27.33%, #15A5E3 46.01%);
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+}
+.purchase-btn {
+    background: linear-gradient(90deg, #A31AFF 27.33%, #15A5E3 46.01%);
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+}
+.header-net {
+    margin-top: 30px;
+    display: flex;
+    /* height: 50px; */
+    padding-top: 15px;
+    font-size: 20px;
+    justify-content: space-around;
+    color: white;
+    align-items: baseline;
+    background: rgba(254, 250, 250, 1);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .Header-flex {
+        flex-direction: column;
+    }
+    .header-h1 {
+        font-size: 39px;
+        margin-bottom: 10px;
+        font-weight: 900;
+    }
+    .header-btn-flex {
+        gap: 5px;
+        align-items: center;
+    }
+    .header-btn {
+        width: 30%;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 0;
+        height: 50px;
+    }
+    .header-btnn {
+        font-size: 14px;
+        width: 30%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    .header-watch {
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    .header-art-flex {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 50px;
+        background: linear-gradient(90deg, #A31AFF 0%, #15A5E3 100%);
+    }
+    .header-image-container {
+        margin-top: 20px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .header-net {
+        display: none;
+    }
+}
